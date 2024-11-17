@@ -128,7 +128,7 @@
         <p>Buy some peace of bitcoin today! Light your future income with bitcoin!</p>
         <div class="links">
             <a href="#" id="produk">BITCOIN NOVELS #1</a>
-            <a href="#" id="produk">BITCOIN NOVELS #2</a>
+            <a href="#" id="produk1">BITCOIN NOVELS #2</a>
             <a href="https://bitcoinfunds.github.io" target="_blank">BITCOIN RETIREMENT FUNDS</a>
             <a href="https://instagram.com/bitcoinnova" target="_blank">INSTAGRAM</a>
             <a href="https://x.com/bitcoinnova" target="_blank">TWITTER</a>
@@ -144,11 +144,11 @@
             <button onclick="window.open('http://google.com','_blank'); return false;" id="closePopup">DOWNLOAD NOW</button>
         </div>
     </div>
-    <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-overlay" id="popupOverlay1">
         <div class="popup">
             <h1>THE RIPPLE OF CHANGE</h1>
             <p><i>The Ripple of Change</i> is a powerful <b>Bitcoin</b>'s story of ambition and morality as Emma Hayes faces the rise of cryptocurrency, challenging her career, relationships, and identity. A thought-provoking novel that inspires you to embrace change and rethink your principles.</p>
-            <button onclick="window.open('http://warriorplus.com','_blank'); return false;" id="closePopup">DOWNLOAD NOW</button>
+            <button onclick="window.open('http://warriorplus.com','_blank'); return false;" id="closePopup1">DOWNLOAD NOW</button>
         </div>
     </div>
 
@@ -165,6 +165,19 @@
 
         closePopup.addEventListener('click', () => {
             popupOverlay.style.display = 'none';
+        });
+        // JavaScript to handle popup
+        const produkLink1 = document.getElementById('produk1');
+        const popupOverlay1 = document.getElementById('popupOverlay1');
+        const closePopup1 = document.getElementById('closePopup1');
+
+        produkLink1.addEventListener('click', (e) => {
+            e.preventDefault();
+            popupOverlay1.style.display = 'flex';
+        });
+
+        closePopup1.addEventListener('click', () => {
+            popupOverlay1.style.display = 'none';
         });
     </script>
 </body>
