@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bio Link Page</title>
+    <title>Bitcoin Novels by Nova</title>
     <style>
         * {
             margin: 0;
@@ -79,20 +79,106 @@
                 font-size: 18px;
             }
         }
+
+        /* Popup Styling */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .popup {
+            background: rgba(0, 0, 0, 2);
+            color: #eee;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+        .popup h1 {
+            margin-bottom: 15px;
+        }
+        .popup button {
+            padding: 10px 20px;
+            background: #2575fc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .popup button:hover {
+            background: #6a11cb;
+        }​
     </style>
 </head>
 <body>
     <div class="container">
         <img src="https://via.placeholder.com/120" alt="Profile Picture" class="profile-img">
-        <h1>Your Name</h1>
-        <p>Short bio or tagline goes here. Something inspiring or catchy!</p>
+        <h1>BTC NOVELS</h1>
+        <p>🌟✨"Ready to level up your finances?<br>My 🚀<b>Bitcoin Novels</b>🚀 will<br>show you how—grab yours now!🏦🌟"</p>
         <div class="links">
-            <a href="#" target="_blank">Instagram</a>
-            <a href="#" target="_blank">YouTube</a>
-            <a href="#" target="_blank">LinkedIn</a>
-            <a href="#" target="_blank">Website</a>
+            <a href="#" id="produk">BITCOIN NOVELS #1</a>
+            <a href="#" id="produk1">BITCOIN NOVELS #2</a>
+            <a href="https://bitcoinfunds.github.io" target="_blank">BITCOIN RETIREMENT FUNDS</a>
+            <a href="https://instagram.com/bitcoinnova" target="_blank">BTC NOVELS ON INSTAGRAM</a>
         </div>
-        <footer>&copy; 2024 Your Name</footer>
+        <footer>&copy; 2024 <a style="text-decoration:none;color:#eee;" href="">BITCOIN NOVELS</a></footer>
     </div>
+
+    <!-- Popup HTML -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup">
+            <h1 style="color:#c773f5;">THE RIPPLE OF CHANGE</h1>
+            <div style="margin—top:—14px;margin—bottom:—14px;"><img src="/cover400.png" style="width:370px;max—width:100%;height:auto;"></div>
+            <p>"The financial world is changing fast—are you ready? Discover <i><b style="color:orange;">Emma Hayes’</b></i> gripping journey in <u><i><b style="color:#e5b5ff;">The Ripple of Change</b></i></u> and uncover the lessons you need to navigate a rapidly evolving future. Don’t wait—secure your copy now and take the first step toward understanding the forces shaping tomorrow’s world!"</p>
+            <button onclick="window.open('http://google.com','_blank'); return false;" id="closePopup">DOWNLOAD NOW</button>
+        </div>
+    </div>
+    <div class="popup-overlay" id="popupOverlay1">
+        <div class="popup">
+            <h1>THE RIPPLE OF CHANGE</h1>
+            <p><i>The Ripple of Change</i> is a powerful <b>Bitcoin</b>'s story of ambition and morality as Emma Hayes faces the rise of cryptocurrency, challenging her career, relationships, and identity. A thought-provoking novel that inspires you to embrace change and rethink your principles.</p>
+            <button onclick="window.open('http://warriorplus.com','_blank'); return false;" id="closePopup1">DOWNLOAD NOW</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle popup
+        const produkLink = document.getElementById('produk');
+        const popupOverlay = document.getElementById('popupOverlay');
+        const closePopup = document.getElementById('closePopup');
+
+        produkLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            popupOverlay.style.display = 'flex';
+        });
+
+        closePopup.addEventListener('click', () => {
+            popupOverlay.style.display = 'none';
+        });
+        // JavaScript to handle popup
+        const produkLink1 = document.getElementById('produk1');
+        const popupOverlay1 = document.getElementById('popupOverlay1');
+        const closePopup1 = document.getElementById('closePopup1');
+
+        produkLink1.addEventListener('click', (e) => {
+            e.preventDefault();
+            popupOverlay1.style.display = 'flex';
+        });
+
+        closePopup1.addEventListener('click', () => {
+            popupOverlay1.style.display = 'none';
+        });
+    </script>
 </body>
 </html>
