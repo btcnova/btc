@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MIXAI Token Smart Contract</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      font-weight: bold;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    /* Header */
+    header {
+      background: #2d98da;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    /* Section Styling */
+    section {
+      padding: 40px 0;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .key-feature {
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .key-feature h3 {
+      font-size: 1.5rem;
+      color: #2d98da;
+    }
+
+    .key-feature ul {
+      list-style: none;
+      margin: 15px 0;
+      padding: 0;
+    }
+
+    .key-feature ul li {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    /* Call-to-Action Button */
+    .cta-button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #ff7f50;
+      color: #fff;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #ff6347;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 1rem;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .container {
+        padding: 15px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      section h2 {
+        font-size: 1.5rem;
+      }
+
+      .cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>MIXAI Token Smart Contract</h1>
+      <p>Launch your token with advanced features and automatic liquidity addition for long-term value growth!</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2>🔥 Burn Mechanism for Sustainable Value Growth:</h2>
+      <p>We have integrated a powerful burn system that reduces your total token supply with every transaction. For buy and sell transactions, <strong>10%</strong> of the tokens involved are burned (<strong>without reducing the amount you transact except for taxes</strong>), meaning a decrease in circulating supply, ensuring your token retains its value over time. Additionally, <strong>40%</strong> of the tokens involved in transfers are burned (<strong>without reducing the amount you transfer except for taxes</strong>), preventing inflation and benefiting long-term holders.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>💰 Transaction Tax to Support Liquidity:</h2>
+      <p>We also apply a transaction tax designed to enhance your token's liquidity. With a <strong>4% tax on purchases</strong> and a <strong>7% tax on sales</strong>, the funds collected are directly added to the liquidity pool, enhancing the price stability of your token. This ensures more stable pricing and high liquidity in the market.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>💎 Automated Liquidity Support for Long-Term Sustainability:</h2>
+      <p>This smart contract automatically adds liquidity to PancakeSwap or other DEXs using the transaction taxes collected. When the liquidity balance reaches a certain amount (for example, 14 BNB), the smart contract automatically adds liquidity to the pool, increasing the volume and accessibility of your token.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>🚀 Key Features:</h2>
+      <div class="key-feature">
+        <h3>Integrated Token Burn:</h3>
+        <ul>
+          <li>Automatic supply reduction with every transaction, benefiting long-term holders and maintaining price stability.</li>
+        </ul>
+      </div>
+
+      <div class="key-feature">
+        <h3>Buy and Sell Taxes:</h3>
+        <ul>
+          <li><strong>4%</strong> for purchases and <strong>7%</strong> for sales, which are directly added to the liquidity pool to support price stability.</li>
+        </ul>
+      </div>
+
+      <div class="key-feature">
+        <h3>Transfer Tax that Preserves Value:</h3>
+        <ul>
+          <li><strong>40% of transferred tokens</strong> are burned (<strong>without reducing the amount you transfer except for taxes</strong>), reducing the circulating supply and increasing the value of your token.</li>
+        </ul>
+      </div>
+
+      <div class="key-feature">
+        <h3>Automatic Liquidity Feature:</h3>
+        <ul>
+          <li>Liquidity is automatically added when a certain threshold is reached, maintaining market stability and facilitating DEX transactions.</li>
+        </ul>
+      </div>
+
+      <div class="key-feature">
+        <h3>Fair Ownership:</h3>
+        <ul>
+          <li>This smart contract gives full control to the token holder without relying on third parties, providing peace of mind and complete transparency.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>🌟 Ready to Launch Your Token with This Advanced Mechanism?</h2>
+      <p>Don’t miss the opportunity to take advantage of this professionally designed, automated smart contract. With this advanced technology, your token not only has the potential for sustainable value growth, but also features a mechanism that supports healthy and efficient liquidity.</p>
+      <a href="https://www.fiverr.com" class="cta-button">Order Now to Start Leveraging This Best-in-Class Token Smart Contract!</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 MIXAI Token. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
